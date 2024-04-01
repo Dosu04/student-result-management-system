@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<form th:action="@{/logout}" method="post">
+    <button type="submit" class="btn btn-danger mt-3">Logout</button>
+</form>
+<div class="container">
+    <h1>Welcome to Admin Dashboard</h1>
+
+    <!-- View Results Link -->
+    <a th:href="@{/admin/results}" class="btn btn-primary mb-3">View Results</a>
+
+    <!-- View Disputed Results Link -->
+    <a th:href="@{/admin/disputes}" class="btn btn-primary mb-3">View Disputed Results</a>
+</div>
+
+</body>
+</html>
